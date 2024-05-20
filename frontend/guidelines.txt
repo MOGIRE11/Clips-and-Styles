@@ -1,0 +1,5 @@
+images -> stored in the public folder
+   how to reference them -> "/image.svg"
+   
+Pages - are in the components folder -> src/components
+
