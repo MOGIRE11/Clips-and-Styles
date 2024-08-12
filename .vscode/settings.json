@@ -1,0 +1,7 @@
+{
+  "eslint.timeBudget.onValidation": {
+    
+    "warn": 4000,
+    "error": 8000
+  }
+}
