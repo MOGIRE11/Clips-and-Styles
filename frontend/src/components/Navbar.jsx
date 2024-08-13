@@ -3,9 +3,10 @@ function Navbar() {
     <nav className="p-3 flex items-center justify-between w-full border border-red-500">
       <div className="logo">
         <a href="#" className="text-lg tracking-wider">
-          Clips&Styles
+          Clips & Styles
         </a>
       </div>
+      
       <div className="nav-links">
         <ul className="flex gap-4">
           <li>
@@ -30,6 +31,7 @@ function Navbar() {
           </li>
         </ul>
       </div>
+      
       <div className="right-nav flex items-center justify-between gap-4">
         <span>{/* light and dark mode toggle */}</span>
         <button type="button" className="border py-1 px-4 rounded-md">Log in</button>
