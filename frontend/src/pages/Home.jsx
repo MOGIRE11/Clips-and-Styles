@@ -1,4 +1,3 @@
-import vite from "/vite.svg";
 
 export default function Home() {
   return (
