@@ -15,17 +15,17 @@ function Navbar() {
             </a>
           </li>
           <li>
-            <a href="#" className="list-item1">
+            <a href="#" className="list-item2">
               Categories
             </a>
           </li>
           <li>
-            <a href="#" className="list-item1">
+            <a href="#" className="list-item3">
               About Us
             </a>
           </li>
           <li>
-            <a href="#" className="list-item1">
+            <a href="#" className="list-item4">
               Blog
             </a>
           </li>
