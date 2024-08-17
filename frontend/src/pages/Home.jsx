@@ -1,7 +1,8 @@
-import landingimage1 from "./Assets/Landingimage1.svg";
 
-function Home() {
+import landingimage1 from "./Assets/Landingimage1.svg";
+export default function Home() {
   return (
+
     <div className="px-4 my-8">
       {/* hero section */}
       <div className="hero">
@@ -19,4 +20,4 @@ function Home() {
   );
 }
 
-export default Home;
+
