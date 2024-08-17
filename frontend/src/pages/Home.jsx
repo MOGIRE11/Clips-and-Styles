@@ -1,5 +1,4 @@
-import vite from "/vite.svg";
-// import landingimage1 from "//Assets/Landing-image-1.svg";
+import landingimage1 from "./Assets/Landingimage1.svg";
 
 function Home() {
   return (
