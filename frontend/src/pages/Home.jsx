@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div className="px-4 my-8">
       {/*hero section */}
-      <div className="hero flex gap-10">
+      {/* <div className="hero flex gap-10">
         <div
           className="headline w-[50%] flex flex-col
           justify-center"
@@ -21,7 +21,7 @@ export default function Home() {
             className="rounded-xl w-[676px] h-[464px]"
           />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
