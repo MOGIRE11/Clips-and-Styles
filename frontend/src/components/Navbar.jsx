@@ -1,6 +1,6 @@
 function Navbar() {
   return (
-    <nav className="p-3 flex items-center justify-between w-full border border-red-500">
+    <nav className="p-3 flex items-center justify-between w-full border border-red-500 text-white">
       <div className="logo">
         <a href="#" className="text-lg tracking-wider">
           Clips & Styles
