@@ -1,5 +1,6 @@
 // TODO:
 // Replace hrefs ,buttons with navlinks
+//responsiveness
 
 
 function Navbar() {
