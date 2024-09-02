@@ -1,6 +1,6 @@
 import Navbar from "./components/Navbar"
-import Footer from "./components/Footer"
-import Home from "./pages/Home"
+// import Footer from "./components/Footer"
+// import Home from "./pages/Home"
 import Landing from "./components/Landing"
 
 function App() {
@@ -8,8 +8,8 @@ function App() {
   return (
     < div className="flex flex-col justify-center items-center w-full">
        <Navbar/>
-       <Home/>
-       <Footer/>
+       {/* <Home/> */}
+       {/* <Footer/> */}
        <Landing/>
     </div>
   )

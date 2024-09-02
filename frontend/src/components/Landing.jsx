@@ -1,6 +1,6 @@
 const Landing = () => {
     return (
-        <div className="beauty-journey-container">
+        <div className="beauty-journey-container mt-20">
             <div className="text-area">
                 <h1 className="font-effect-outline">
                     Embrace your <br /> beauty journey!<br />
