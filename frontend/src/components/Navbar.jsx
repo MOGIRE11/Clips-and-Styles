@@ -18,19 +18,33 @@ function Navbar() {
               Home
             </a>
           </li>
-          <li>
-            <a href="#" className="list-item2">
-              Categories
-            </a>
-            <div className="sub-menu absolute top-[100%] left-[-150px] border border-transparent w-[500px] h-48 backdrop-blur-md rounded-lg bg-black grid grid-cols-4 p-4 gap-4">
-              <a href="/" className="sub-item">Barbershop</a>
-              <a href="/" className="sub-item">Hair Salon</a>
-              <a href="/" className="sub-item">Spa</a>
-              <a href="/" className="sub-item">Nail Tech</a>
-              <a href="/" className="sub-item">Make up</a>
-              <a href="/" className="sub-item">Skincare</a>
-              <a href="/" className="sub-item">Piercing</a>
-              <a href="/" className="sub-item">Tattoo</a>
+          <li className="categories">
+            <a href="#">Categories</a>
+            <div className="sub-menu hidden absolute top-[100%] left-[-180px] border border-transparent w-[550px] h-52 backdrop-blur-md rounded-[16px] bg-black grid-cols-4 p-4 gap-4 animate__animated animate__fadeIn">
+              <a href="/" className="sub-item">
+                Barbershop
+              </a>
+              <a href="/" className="sub-item">
+                Hair Salon
+              </a>
+              <a href="/" className="sub-item">
+                Spa
+              </a>
+              <a href="/" className="sub-item">
+                Nail Tech
+              </a>
+              <a href="/" className="sub-item">
+                Make up
+              </a>
+              <a href="/" className="sub-item">
+                Skincare
+              </a>
+              <a href="/" className="sub-item">
+                Piercing
+              </a>
+              <a href="/" className="sub-item">
+                Tattoo
+              </a>
             </div>
           </li>
           <li>

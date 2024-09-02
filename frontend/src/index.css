@@ -59,13 +59,21 @@ body {
 }
 
 .sub-item{
-  border: 1px solid;
   display:grid;
   place-items:center;
   padding:4px;
-  border-radius:12px;
+  border-radius:8px;
+  background-color: rgba(50,50,50,0.1);
+  transition: background-color 0.5s ease;
 }
 
+.sub-item:hover{
+  background-color: rgba(50,50,50,0.4);
+}
+
+.categories:hover .sub-menu{
+  display: grid;
+}
 
 /* Navbar styling  ends hre*/
 
