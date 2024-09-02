@@ -77,6 +77,17 @@ function Navbar() {
         >
           Sign Up
         </button>
+        
+        <button className="menubar">
+          <div className="line"></div>
+          <div className="line"></div>
+          <div className="line"></div>
+        </button>
+      </div>
+      
+      {/* mobile navigation */}
+      <div className="mobile-nav">
+        
       </div>
     </nav>
   );
