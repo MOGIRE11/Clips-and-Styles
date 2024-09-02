@@ -75,6 +75,36 @@ body {
   display: grid;
 }
 
+.line{
+  height: 2px;
+  width: 24px;
+  background-color: lightgrey;
+  border-radius: 50px;
+}
+
+.content {
+  padding: 16px;
+  margin-left: auto;
+  backdrop-filter: blur(10.5px);
+  outline: none;
+  border: none;
+  /* color: white; */
+  /* background-color: rgba(100, 100, 255, 0.4); */
+  border-radius: 8px;
+}
+
+.content ul li {
+  list-style: none;
+  font-weight: 400;
+  letter-spacing: 0.03rem;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.content ul li:hover {
+  background-color: rgba(213, 213, 213, 0.2);
+}
 /* Navbar styling  ends hre*/
 
 

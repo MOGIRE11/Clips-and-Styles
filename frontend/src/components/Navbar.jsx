@@ -2,7 +2,6 @@
 // Replace hrefs ,buttons with navlinks
 //responsiveness
 
-
 function Navbar() {
   return (
     <nav className="p-3 h-[70px] flex items-center justify-between w-full text-white sticky top-0 z-10 backdrop-blur-lg bg-[#1D0301]/50">
@@ -12,7 +11,7 @@ function Navbar() {
         </a>
       </div>
 
-      <div className="nav-links relative">
+      <div className="hidden lg:flex items-center nav-links relative">
         <ul className="flex gap-4 items-center">
           <li>
             <a href="/" className="list-item1">
@@ -67,30 +66,86 @@ function Navbar() {
         {/* TODO : Replacing buttons with Navlinks */}
         <button
           type="button"
-          className="border-2 border-[#23461A] py-2 px-6 rounded-md active:translate-y-[2px] tracking-wide"
+          className="border-2 border-[#23461A] py-1.5 md:py-2 px-3 md:px-6 rounded-md active:translate-y-[2px] tracking-wide"
         >
           Log in
         </button>
         <button
           type="button"
-          className="border border-transparent py-2 px-6 rounded-md bg-[#23461A] hover:bg-[#23461A]/80 active:translate-y-[2px]"
+          className="hidden border border-transparent py-2 px-6 rounded-md bg-[#23461A] hover:bg-[#23461A]/80 active:translate-y-[2px] lg:inline-flex"
         >
           Sign Up
         </button>
-        
-        <button className="menubar">
+
+        <button
+          className="menubar flex flex-col gap-1.5 border p-2 rounded-sm"
+          popovertarget="menu-content"
+        >
           <div className="line"></div>
           <div className="line"></div>
           <div className="line"></div>
         </button>
-      </div>
-      
-      {/* mobile navigation */}
-      <div className="mobile-nav">
-        
+
+        {/* mobile-menu content */}
+        <dialog
+          popover="auto"
+          id="menu-content"
+          className="w-full h-[70dvh] border lg:hidden p-4"
+        >
+          <section className="mb-4 flex items-center justify-between">
+            <a href="/" className="text-lg tracking-wide logo">
+              Clips & Styles
+            </a>
+
+            <p className="inline float-right text-3xl border px-2" >&times;</p>
+          </section>
+
+          <ul className="content">
+            <li>
+              <a href="">Home</a>
+            </li>
+            <li>
+              <details>
+                <summary>Categories</summary>
+                <div className="flex flex-col">
+                  <a href="/" className="">
+                    Barbershop
+                  </a>
+                  <a href="/" className="">
+                    Hair Salon
+                  </a>
+                  <a href="/" className="">
+                    Spa
+                  </a>
+                  <a href="/" className="">
+                    Nail Tech
+                  </a>
+                  <a href="/" className="">
+                    Make up
+                  </a>
+                  <a href="/" className="">
+                    Skincare
+                  </a>
+                  <a href="/" className="">
+                    Piercing
+                  </a>
+                  <a href="/" className="">
+                    Tattoo
+                  </a>
+                </div>
+              </details>
+            </li>
+            <li>
+              <a href=""></a>About Us
+            </li>
+            <li>
+              <a href=""></a>Blog
+            </li>
+          </ul>
+        </dialog>
       </div>
     </nav>
   );
 }
 
-export default Navbar
+export default Navbar;
