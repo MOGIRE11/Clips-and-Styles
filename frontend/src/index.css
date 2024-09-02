@@ -3,7 +3,6 @@
 @import url("https://fonts.googleapis.com/css?family=Sofia&effect=fire");
 @import url("https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple");
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -21,31 +20,70 @@ body {
   margin: auto;
   height: auto;
   font-family: "montserrat", serif;
-  background-color: #4a0e05;
-  /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
-  /* font-weight: 500; */
+  /* background-color: #4a0e05; */
+  background-color: #1D0301;
 }
 
 .logo {
   font-family: "Kavoon", serif;
 }
 
+/* Navbar */
+
+.nav-links ul li {
+  height: 70px;
+  display:flex;
+  align-items: center;
+  padding: 0 4px;
+  position: relative;
+  transform: 0.5s;
+  cursor: pointer;
+}
+
+.nav-links ul li::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 3px;
+  top: 70%;
+  left: 0;
+  transition: transform 0.5s;
+  transform: scaleX(0);
+  transform-origin: right;
+  background-color:lightgray;
+}
+
+.nav-links ul li:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.sub-item{
+  border: 1px solid;
+  display:grid;
+  place-items:center;
+  padding:4px;
+  border-radius:12px;
+}
+
+
+/* Navbar styling  ends hre*/
+
+
 .beauty-journey-container {
   position: relative;
   width: 100%;
   height: 100vh;
-  
-  
 }
 
 .text-area {
   position: absolute;
   top: 0;
   left: 0;
-  
+
   color: #fff;
-  font-family: 'Georgia', sans-serif;
-  font-size: 20px;  
+  font-family: "Georgia", sans-serif;
+  font-size: 20px;
   margin-left: 10px;
   margin-bottom: 40px;
 }
@@ -53,7 +91,7 @@ body {
 .text-area h1 {
   font-size: 60px;
   margin-bottom: 50px;
-  font-family: 'Kavoon', sans-serif;
+  font-family: "Kavoon", sans-serif;
   font-weight: 200;
   flex: 2;
 }
@@ -61,7 +99,6 @@ body {
 .text-area p {
   font-size: 25px;
   margin-bottom: 20px;
-  
 }
 
 .image-area {
@@ -77,14 +114,16 @@ body {
 }
 
 /* Why Us Section */
-.why-us-container {         /*uses display flex to alignthe image and text horizontally*/
+.why-us-container {
+  /*uses display flex to alignthe image and text horizontally*/
   display: flex;
   align-items: left;
   padding: 20px;
   color: #fff; /* Text color */
 }
 
-.why-us-image {        /*holds the image on the left side*/
+.why-us-image {
+  /*holds the image on the left side*/
   flex: 1;
   margin-right: 20px;
 }
@@ -94,14 +133,15 @@ body {
   border-radius: 8px;
 }
 
-.why-us-text {  /*holds text on the right side*/
+.why-us-text {
+  /*holds text on the right side*/
   flex: 1;
 }
 
 .why-us-text h2 {
   font-size: 32px;
   margin-bottom: 20px;
-  font-family: 'Sofia', sans-serif;
+  font-family: "Sofia", sans-serif;
 }
 
 .why-us-text p {
@@ -125,7 +165,7 @@ body {
 .first-stop-text h2 {
   font-size: 32px;
   margin-bottom: 20px;
-  font-family: 'Sofia', sans-serif;
+  font-family: "Sofia", sans-serif;
 }
 
 .first-stop-text ul {
@@ -146,7 +186,6 @@ body {
   margin-bottom: 10px;
 }
 
-
 /* Small Business Section */
 .small-business-container {
   padding: 20px;
@@ -157,7 +196,7 @@ body {
 .small-business-container h2 {
   font-size: 32px;
   margin-bottom: 20px;
-  font-family: 'Sofia', sans-serif;
+  font-family: "Sofia", sans-serif;
 }
 
 .small-business-image img {
@@ -166,14 +205,13 @@ body {
   margin-bottom: 20px;
 }
 
-
 /* Footer Styles */
 .footer-container {
   background-color: #100f0e;
   padding: 40px 20px;
   color: #fff;
   text-align: center;
-  font-family: 'Montserrat', serif;
+  font-family: "Montserrat", serif;
 }
 
 .footer-motto {
@@ -208,7 +246,7 @@ body {
 .footer-social h3 {
   font-size: 18px;
   margin-bottom: 10px;
-  font-family: 'Sofia', sans-serif;
+  font-family: "Sofia", sans-serif;
 }
 
 .footer-social .social-icons a {

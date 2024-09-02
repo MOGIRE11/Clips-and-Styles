@@ -23,7 +23,7 @@ const Landing = () => {
         <div className="why-us-text">
           <h2>Why us</h2>
           <p>
-            Clip&Styles offer a seamless, user-friendly experience that
+            Clip&Styles offers a seamless, user-friendly experience that
             prioritizes convenience and choice. With our intuitive interface,
             customers can easily browse through a diverse selection of reputable
             beauty shops, read reviews, and book appointments effortlessly. Our
@@ -41,7 +41,7 @@ const Landing = () => {
       <div className="first-stop-container">
         <div className="first-stop-text">
           <h2>Why we should be your first stop</h2>
-          <ul>
+          <ul className="space-y-4 mt-16">
             <li>User-Friendly</li>
             <li>Comprehensive Service listing</li>
             <li>Convenient Booking Process</li>
