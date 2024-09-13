@@ -14,7 +14,7 @@
 }
 
 body {
-  max-width: 1440px;
+  /* max-width: 1440px; */
   min-width: 320px;
   width: 100%;
   margin: auto;
@@ -49,13 +49,14 @@ body {
   left: 0;
   transition: transform 0.5s;
   transform: scaleX(0);
-  transform-origin: right;
-  background-color:lightgray;
+  transform-origin: center;
+  background-color:rgba(211, 211, 211, 0.7);
+  border-radius:50px;
 }
 
 .nav-links ul li:hover::after {
   transform: scaleX(1);
-  transform-origin: left;
+  transform-origin: center;
 }
 
 .sub-item{
@@ -63,49 +64,64 @@ body {
   place-items:center;
   padding:4px;
   border-radius:8px;
-  background-color: rgba(50,50,50,0.1);
+  background-color: rgba(50,50,50,0.2);
   transition: background-color 0.5s ease;
 }
 
 .sub-item:hover{
-  background-color: rgba(50,50,50,0.4);
+  background-color: rgba(50,50,50,0.7);
 }
 
 .categories:hover .sub-menu{
   display: grid;
 }
 
-.line{
-  height: 2px;
-  width: 24px;
-  background-color: lightgrey;
-  border-radius: 50px;
-}
-
 .content {
-  padding: 16px;
+  /* padding: 16px; */
   margin-left: auto;
   backdrop-filter: blur(10.5px);
   outline: none;
-  border: none;
-  /* color: white; */
-  /* background-color: rgba(100, 100, 255, 0.4); */
+  /* border: 1px solid; */
   border-radius: 8px;
 }
 
-.content ul li {
+.content li {
   list-style: none;
   font-weight: 400;
   letter-spacing: 0.03rem;
-  padding: 12px;
+  padding: 8px;
   border-radius: 6px;
   cursor: pointer;
+  /* border:1px solid; */
+  border: 1px solid transparent;
 }
 
-.content ul li:hover {
-  background-color: rgba(213, 213, 213, 0.2);
+.content li:hover {
+  background-color: rgba(30, 41, 59, 0.8);
+  border: 1px solid rgba(241,245,249,0.1);
 }
-/* Navbar styling  ends hre*/
+
+.content .categories-drop{
+  border: 1px solid rgba(241,245,249,0.1);
+}
+
+.content .categories-drop details[open] summary::after{
+  transform: rotate(90deg);
+} 
+
+.categories-drop details div{
+  background-color:rgba(15,12,42,0.5);
+}
+
+.mobile-dropdown{
+  padding:8px;
+  border-radius:3px;
+}
+
+.mobile-dropdown:hover{
+  background-color:rgba(15,12,42,1);
+}
+/* Navbar styling  ends here*/
 
 
 .beauty-journey-container {
