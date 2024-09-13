@@ -2,6 +2,7 @@
 // Replace hrefs ,buttons with navlinks
 //responsiveness
 
+
 function Navbar() {
   return (
     <nav className="p-3 h-[70px] flex items-center justify-between w-full text-white sticky top-0 z-10 backdrop-blur-lg bg-[#1D0301]/50">
