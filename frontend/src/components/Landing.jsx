@@ -1,6 +1,4 @@
-import Navbar from "../components/Navbar";
-import landingimage1 from "./Assets/Landingimage1.svg";
-export default function Home() {
+const Landing = () => {
   return (
     <div className="beauty-journey-container mt-20">
       <div className="text-area">
@@ -129,8 +127,7 @@ export default function Home() {
         </div>
       </footer>
     </div>
-  
   );
-}
+};
 
-
+export default Landing;
