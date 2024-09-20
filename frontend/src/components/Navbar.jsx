@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 function Navbar() {
   return (
     <nav className="navigation-wrapper w-[100%]  text-white sticky top-0 z-10 backdrop-blur-lg bg-[#1D0301]/50">
-      <div className="p-3 h-[60px] flex items-center justify-between w-full container mx-auto">
+      <div className="p-3 h-[70px] flex items-center justify-between w-full container mx-auto">
         <div className="logo">
           <NavLink to="/" className="text-lg tracking-wider">
             Clips & Styles
