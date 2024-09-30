@@ -1,18 +1,27 @@
-import React from 'react';
-import aboutimg1 from "./Assets/About-1.svg";
+import React from "react";
+// import aboutimg1 from "./Assets/About-1.svg";
+import about1 from "./Assets/Frame-156.png";
+import about2 from "./Assets/About-2.svg"
 
 function About() {
   return (
-    <div
-      className="absolute inset-0 h-screen bg-cover bg-center"
-      style={{
-        backgroundImage: `url(${aboutimg1})`,
-      }}
-    >
-      {/* Overlay for dark effect */}
-      <div className="absolute inset-0 bg-black opacity-50"></div>
+    <div className="about bg-[#300603]">
+      <div
+        className="about-us container mx-auto relative h-screen bg-cover bg-center text-white mb-14 "
+        style={{
+          backgroundImage: `url(${about1})`, // Use backticks for template literals
+        }}
+      >
+        <div className="absolute inset-0 bg-black opacity-40"></div>{" "}
+        {/* Overlay */}
+        <div className="relative flex justify-center items-center h-full">
+          <h1 className="text-5xl font-bold">ABOUT US</h1>
+        </div>
+      </div>
+
+      <div className="hero"></div>
     </div>
   );
-};
+}
 
 export default About;
