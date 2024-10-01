@@ -107,7 +107,7 @@ function Navbar() {
               </button>
             </section>
 
-            <ul className="content">
+            <ul className="content backdrop-[10.5px]">
               <li>
                 <NavLink to="/">Home</NavLink>
               </li>

@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div className="beauty-journey-container mt-20 container mx-auto">
+    <div className="beauty-journey-container mt-20 container mx-auto px-32">
       <div className="text-area">
         <h1 className="font-effect-outline">
           Embrace your <br /> beauty journey!
@@ -127,5 +127,6 @@ export default function Home() {
         </div>
       </footer>
     </div>
+  
   );
 }
