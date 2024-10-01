@@ -1,6 +1,4 @@
-import React from 'react';
 import about1 from "./Assets/Frame-156.png";
-import aboutimg1 from "./Assets/About-1.svg";
 
 function About() {
   return (
@@ -11,7 +9,7 @@ function About() {
           backgroundImage: `url(${about1})`, // Use backticks for template literals
         }}
       >
-        <div className="absolute inset-0 bg-black opacity-40"></div>{" "}
+        <div className="absolute inset-0 bg-black opacity-40"></div>
         {/* Overlay */}
         <div className="relative flex justify-center items-center h-full">
           <h1 className="text-5xl font-bold">ABOUT US</h1>
@@ -22,6 +20,6 @@ function About() {
     </div>
   );
 }
-}
+
 
 export default About;
