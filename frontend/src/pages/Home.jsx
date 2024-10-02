@@ -34,7 +34,7 @@ export default function Home() {
             us, customers can enjoy a hassle-free way to indulge in self-care
             and beauty treatments, all in one convenient place.
           </p>
-        </div>
+        </div>        
       </div>
 
       {/* Why We Should Be Your First Stop Section */}
