@@ -1,6 +1,6 @@
 import React from 'react';
 import about1 from "./Assets/Frame-156.png";
-import aboutimg1 from "./Assets/About-1.svg";
+//import aboutimg1 from "./Assets/About-1.svg";
 
 function About() {
   return (
@@ -21,7 +21,6 @@ function About() {
       <div className="hero"></div>
     </div>
   );
-}
 }
 
 export default About;
